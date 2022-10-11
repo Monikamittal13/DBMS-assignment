@@ -67,9 +67,9 @@ INSERT INTO orders(Onum,Amt,Odate,Cnum,Snum) VALUES (3011,  9891.88, '1990-10-06
 
 SELECT * FROM orders;
 
-# 1. Count the number of Salesperson whose name begin with ‘a’/’A’.
+/* 1. Count the number of Salesperson whose name begin with ‘a’/’A’.*/
 
-SELECT COUNT(Sname) AS number_of_employee_name_starts_with_A FROM salespeople
+SELECT COUNT(Sname) AS no._of_Sname_starts_with_A FROM salespeople
 WHERE Sname LIKE 'A%';
 
 /* 2. Display all the Salesperson whose all orders worth is more than Rs. 2000. */
