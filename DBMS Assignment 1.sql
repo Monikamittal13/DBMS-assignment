@@ -74,10 +74,6 @@ WHERE Sname LIKE 'A%';
 
 /* 2. Display all the Salesperson whose all orders worth is more than Rs. 2000. */
 
--- SELECT Sname,amt 
--- FROM salespeople,orders
--- WHERE amt>2000
--- GROUP BY Sname;
 SELECT orders.snum,orders.amt, salespeople.sname 
 FROM orders 
 INNER JOIN salespeople 
